@@ -21,7 +21,7 @@ scene.add(gridHelper);
 // Load the character model
 const loader = new GLTFLoader();
 let character;
-loader.load('assets/models/character.glb', (gltf) => {
+loader.load('scene.gltf', (gltf) => {
     character = gltf.scene;
     character.position.y = -1;
     scene.add(character);
